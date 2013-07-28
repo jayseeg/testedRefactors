@@ -1,33 +1,76 @@
 body {
 	margin: 0;
-	padding: 0;
 }
 /*stolen from http://www.cssnewbie.com/super-simple-horizontal-navigation-bar/#.UfQt0z6QcYQ*/
 .header-nav-links {
-	width: 100%;
 	float: left;
+
+	width: 100%;
 	margin: 0 0 3em 0;
 	padding: 0;
-	list-style: none;
+
 	background-color: #f2f2f2;
 	border-bottom: 1px solid #ccc;
 	border-top: 1px solid #ccc;
-}
 
-.header-nav-links li {
-	float: left;
+	list-style: none;
 }
+	.header-nav-links li {
+		float: left;
+	}
+		.header-nav-links li a {
+			display: block;
 
-.header-nav-links li a {
-	display: block;
-	padding: 8px 15px;
-	text-decoration: none;
-	font-weight: bold;
-	color: #069;
-	border-right: 1px solid #ccc;
-}
+			padding: 8px 15px;
 
-.header-nav-links li a:hover {
-	color: #c00;
-	background-color: #fff;
+			color: #069;
+			border-right: 1px solid #ccc;
+
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.header-nav-links li a:hover {
+			color: #c00;
+			background-color: #fff;
+		}
+
+/********************************************************************************
+
+	Email Form
+
+********************************************************************************/
+.email-form-li {
+	position: relative;
 }
+	li.email-form-li a {
+		color: #c00;
+	}
+.email-form-wrapper {
+	position: absolute;
+	left: -1px;
+	top: 34px;
+	z-index: -1;
+
+	height: 0;
+
+	overflow: hidden;
+
+	background: #f2f2f2;
+	border: 1px solid #ccc;
+	border-top: 0;
+
+	-webkit-transition: height 350ms ease-in-out;
+	   -moz-transition: height 350ms ease-in-out;
+        -ms-transition: height 350ms ease-in-out;
+         -o-transition: height 350ms ease-in-out;
+			transition: height 350ms ease-in-out;
+}
+.email-form-wrapper.opened {
+	height: 135px;
+}
+	.email-form-wrapper form {
+		margin: 20px;
+	}
+		.email-form-wrapper input {
+			width: 100%;
+		}
