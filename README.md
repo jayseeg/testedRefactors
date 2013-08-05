@@ -1,0 +1,3 @@
+This repo is intended to be walked through one commit at a time through the two non master branches to display the difference in approaches (between untested refactors and test first refactors). The work being done in the demo is ultimately pretty trivial, and would not actually benefit from the proposed approach, however for brevity and simplicity's sake this approach likely makes the most sense.
+
+There are support materials and a presentation that clarify the work being done, however I am not linking to them quite yet due to paying project work.
